@@ -29,5 +29,23 @@ public class EstructuraRepeticion {
         for (String argumento : args) {
             System.out.println("Argumento: " + argumento);
         }
+
+        // While: Que lo mismo que el for, solo que únicamente hay una condición
+        // para realizar el ciclo
+
+        int j = 11;
+
+        // While: Sólo se ejecuta SI SE CUMPLE LA CONDICIÓN
+
+        while(j <= 10) {
+            System.out.println(j + " es menor o igual que 10");
+            j++;
+        }
+
+        // Do-While: Se ejecuta POR LO MENOS UNA VEZ
+        do {
+            System.out.println(j + " es menor o igual que 10");
+            j++;
+        } while(j <= 10);
     }
 }
