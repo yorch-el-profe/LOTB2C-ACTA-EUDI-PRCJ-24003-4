@@ -24,5 +24,10 @@ public class EstructuraRepeticion {
 
             System.out.println(i);
         }
+
+        // For Each: Itero sobre una estructura (arreglos, listas, mapas, conjuntos, ...)
+        for (String argumento : args) {
+            System.out.println("Argumento: " + argumento);
+        }
     }
 }
