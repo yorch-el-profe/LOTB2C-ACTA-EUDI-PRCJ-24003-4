@@ -25,4 +25,8 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    public String imprimirProducto() {
+        return "[" + nombre + " - $" + precio + "]";
+    }
 }
