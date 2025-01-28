@@ -11,7 +11,7 @@ public class MaquinaExpendedora {
     }
 
     public Producto comprar(double dinero) {
-        if (producto.getPrecio() == dinero) {
+        if (dinero >= producto.getPrecio()) {
             return producto;
         } else {
             System.out.println("Faltan: $" + (producto.getPrecio() - dinero));
