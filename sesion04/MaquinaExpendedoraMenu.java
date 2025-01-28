@@ -28,7 +28,7 @@ public class MaquinaExpendedoraMenu {
         
             switch(opcion) {
                 case "1":
-                    System.out.println("\n" + producto.imprimirProducto());
+                    System.out.println("\n" + producto);
                     break;
                 case "2":
                     System.out.println("\nIngresa la cantidad de dinero:");
@@ -42,7 +42,7 @@ public class MaquinaExpendedoraMenu {
                     
                     // Caso donde fue una compra exitosa
                     if (compra != null) {
-                        System.out.println("\nCompraste: " + compra.imprimirProducto());
+                        System.out.println("\nCompraste: " + compra);
                     } else {
                         System.out.println("\nIntenta nuevamente...");
                     }

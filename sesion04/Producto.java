@@ -26,7 +26,24 @@ public class Producto {
         this.precio = precio;
     }
 
-    public String imprimirProducto() {
+    // Sobreescritura
+    @Override // <-- Anotaciones
+    public String toString() {
         return "[" + nombre + " - $" + precio + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Producto p = (Producto) o; // Casting: Convertir de tipo A a tipo B
+        return p.getNombre().equals(nombre) && p.getPrecio() == precio;
+    }
+
+    public static void main(String[] args) {
+        Producto p1 = new Producto("Coca Cola 350ml", 10);
+        Producto p2 = new Producto("Coca Cola 350ml", 10);
+
+        System.out.println("p1 == p1?: " + (p1 == p1));
+        System.out.println("p1 == p2?: " + (p1 == p2));
+        System.out.println("p1.equals(p2)?: " + p1.equals(p2));
     }
 }
