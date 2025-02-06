@@ -1,3 +1,4 @@
+package herencia;
 public class Desarrollador extends Empleado {
     
     private String lenguajeProgramacion;

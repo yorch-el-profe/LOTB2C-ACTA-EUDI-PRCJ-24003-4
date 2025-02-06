@@ -1,3 +1,4 @@
+package herencia;
 public class Empleado {
 
     protected String nombre;
