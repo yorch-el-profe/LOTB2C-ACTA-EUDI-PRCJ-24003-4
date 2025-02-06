@@ -34,6 +34,14 @@ public class Personaje {
         return puntosDefensa;
     }
 
+    public void atacar() {
+        System.out.println("<< Atacando con " + puntosAtaque + " puntos >>");
+    }
+
+    public void defender() {
+        System.out.println("<< Defendiendo con " + puntosDefensa + " puntos >>");
+    }
+
     @Override
     public String toString() {
         return "HP: " + puntosVida + " - ATK: " + puntosAtaque + " - DEF: " + puntosDefensa;

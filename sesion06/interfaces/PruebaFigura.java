@@ -8,5 +8,7 @@ public class PruebaFigura {
         Cuadrado c = new Cuadrado(5);
 
         c.calcularPerimetro(); // 20
+
+        Figura f = new Cuadrado(5); // <-- Valido!
     }
 }

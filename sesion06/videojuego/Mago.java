@@ -8,6 +8,10 @@ public class Mago extends Personaje {
         // super.puntosVida *= 1.3;
     }
 
+    public void recuperar() {
+        super.puntosVida = 100;
+    }
+
     @Override
     public String toString() {
         return "Mago [ " + super.toString() + " ]";
