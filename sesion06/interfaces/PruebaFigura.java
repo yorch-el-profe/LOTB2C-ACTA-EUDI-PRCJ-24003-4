@@ -1,3 +1,5 @@
+package interfaces;
+
 public class PruebaFigura {
  
     public static void main(String[] args) {

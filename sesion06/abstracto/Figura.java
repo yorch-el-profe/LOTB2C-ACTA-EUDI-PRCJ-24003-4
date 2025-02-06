@@ -1,3 +1,5 @@
+package abstracto;
+
 /**
  * Una clase abstracta es una clase "incompleta".
  * Es decir, tiene métodos que no han sido implementados

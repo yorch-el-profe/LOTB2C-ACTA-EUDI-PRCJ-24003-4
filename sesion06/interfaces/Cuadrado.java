@@ -1,9 +1,13 @@
-public class Cuadrado extends Figura {
+package interfaces;
+
+// extends -> Herencia
+// implements -> Implementar una interfaz
+
+public class Cuadrado implements Figura {
     
     private double lado;
 
     public Cuadrado(double lado) {
-        super(4);
         this.lado = lado;
     }
 

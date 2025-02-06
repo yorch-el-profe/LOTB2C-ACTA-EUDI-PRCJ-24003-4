@@ -1,3 +1,5 @@
+package abstracto;
+
 public class FiguraMalDiseñada {
 
     protected int numeroLados;
