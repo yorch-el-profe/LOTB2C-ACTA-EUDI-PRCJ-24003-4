@@ -25,7 +25,7 @@ public class PruebaLista {
 
         // Una lista puede almancenar cualquier cantidad de elementos
         for (int i = 0; i < 100; i++) {
-            lista.add(i);
+            lista.add(i * 1000);
         }
 
         // Puedo conocer el tamaño de la lista
@@ -33,6 +33,8 @@ public class PruebaLista {
 
         // Puedo eliminar elementos por posición (0-indexed)
         lista.remove(50); // <--
+
+        lista.add(50000); // Inserta al final
 
         // Para recorrer una lista se puede utilizar el índice o un foreach
         for (int index = 0; index < lista.size(); index++) {
