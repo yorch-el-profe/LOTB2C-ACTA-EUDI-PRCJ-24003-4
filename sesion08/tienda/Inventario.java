@@ -11,6 +11,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
 
 public class Inventario {
 
@@ -56,6 +58,30 @@ public class Inventario {
             bufferedReader.close();
         } catch (IOException ex) {
             System.out.println("NO SE PUDO CARGAR EL INVENTARIO");
+        }
+    }
+
+    public void agregar(Producto p) {
+        inventario.add(p);
+    }
+
+    public int tamaño() {
+        return inventario.size();
+    }
+
+    public void guardar() {
+        try {
+            FileWriter writer = new FileWriter("./tienda/inventario.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+
+            for (Producto p : inventario) {
+                bufferedWriter.write(p.convertirLinea());
+                bufferedWriter.newLine();
+            }
+
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("NO SE PUDO GUARDAR EL INVENTARIO");
         }
     }
 }

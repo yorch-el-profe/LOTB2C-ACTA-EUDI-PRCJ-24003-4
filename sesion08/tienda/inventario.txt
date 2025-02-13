@@ -4,3 +4,6 @@ PAPAS,Sabritas,30,Adobadas,18
 PAPAS,Cheetos,30,Queso,16
 REFRESCO,Pepsi,1000,25
 PASTELITO,Gansito,15
+PASTELITO,Dalmata,15
+REFRESCO,Lulu Cola,10,300
+PAPAS,Ruffles,30,Queso,18

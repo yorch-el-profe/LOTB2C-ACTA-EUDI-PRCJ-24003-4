@@ -16,4 +16,9 @@ public class Refresco extends Producto {
     public void setMililitros(int mililitros) {
         this.mililitros = mililitros;
     }
+
+    @Override
+    public String convertirLinea() {
+        return "REFRESCO," + nombre + "," + mililitros + "," + precio;
+    }
 }

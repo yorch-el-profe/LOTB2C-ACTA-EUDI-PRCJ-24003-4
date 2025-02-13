@@ -26,4 +26,9 @@ public class Papas extends Producto {
     public void setSabor(String sabor) {
         this.sabor = sabor;
     }
+
+    @Override
+    public String convertirLinea() {
+        return "PAPAS," + nombre + "," + peso + "," + sabor + "," + precio;
+    }
 }

@@ -1,6 +1,6 @@
 package tienda.modelos;
 
-public class Producto {
+public abstract class Producto {
     
     protected String nombre;
     protected int precio;
@@ -25,4 +25,6 @@ public class Producto {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
+
+    public abstract String convertirLinea();
 }
