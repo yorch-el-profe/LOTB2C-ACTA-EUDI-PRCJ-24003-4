@@ -46,6 +46,9 @@ public class AdivinaNumero {
                 // atrapa TODAS las excepciones
                 System.out.println("\nOCURRIÓ UN ERROR INESPERADO...");
                 break;
+            } finally {
+                // Éste se va activar INDEPENDIENTEMENTE si hubo un error o no
+                System.out.println("\nSe ejecuta finally");
             }
         } while (true);
     }
