@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class AdivinaNumero {
 
     public static void main(String[] args) {
-        Scanner sc = null;//new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int vidas = 5;
 
         // Math.random() da un número entre 0.0000 y 0.999999
@@ -33,11 +33,19 @@ public class AdivinaNumero {
                     System.out.println("PERDISTE!! EL NÚMERO ERA: " + adivina);
                     break;
                 }
-            } catch(InputMismatchException ex) {
+            } catch(InputMismatchException imex) {
                 // Éste bloque se activa únicamente cuando dentro del bloque "try"
                 // se lanza una excepción de tipo "InputMismatchException"
                 System.out.println("\nEL NÚMERO QUE INGRESASTE ES INVÁLIDO...");
                 sc.nextLine();
+            } catch(NullPointerException npex) {
+                System.out.println("\nSE LANZO UN ERROR DE TIPO NULL");
+                break;
+            } catch(Exception ex) {
+                // Un bloque tipo "Exception" es el bloque más genérico, es decir,
+                // atrapa TODAS las excepciones
+                System.out.println("\nOCURRIÓ UN ERROR INESPERADO...");
+                break;
             }
         } while (true);
     }
